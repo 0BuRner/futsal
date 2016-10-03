@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Namur City</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/blog-post.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color:white;">Namur City &mdash; Futsal</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container" ng-app="sortApp" ng-controller="mainController">
+        <div class="row">
+            <div class="col-xs-12">
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="panel panel-red">
+							<div class="panel-heading">
+								<div class="row row-no-padding">
+									<div class="col-xs-6 text-center">
+										<div>NAMUR CITY</div>
+										<div class="huge">2 <span class="halftime-score">0</span></div>
+									</div>
+									<div class="col-xs-6 text-center">
+										<div>MF EVELETTE</div>
+										<div class="huge"><span class="halftime-score">3</span> 5</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 text-center">Lundi 29 Août 2016 à 20:00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="panel panel-green">
+							<div class="panel-heading">
+								<div class="row row-no-padding">
+									<div class="col-xs-6 text-center">
+										<div>NAMUR CITY</div>
+										<div class="huge">9 <span class="halftime-score">2</span></div>
+									</div>
+									<div class="col-xs-6 text-center">
+										<div>AMIC. DINANT B</div>
+										<div class="huge"><span class="halftime-score">3</span> 3</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 text-center">Lundi 12 Septembre 2016 à 20:00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="panel panel-red">
+							<div class="panel-heading">
+								<div class="row row-no-padding">
+									<div class="col-xs-6 text-center">
+										<div>NAMUR CITY</div>
+										<div class="huge">2 <span class="halftime-score">2</span></div>
+									</div>
+									<div class="col-xs-6 text-center">
+										<div>VEZIN UNITED</div>
+										<div class="huge"><span class="halftime-score">10</span> 14</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 text-center">Lundi 26 Septembre 2016 à 20:00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="geo:50.3864038,5.2433166">
+						<div class="panel panel-grey clickable">
+							<div class="panel-heading">
+								<div class="row row-no-padding">
+									<div class="col-xs-6 text-center">
+										<div>MFC CINEY D</div>
+										<div class="huge">? <span class="halftime-score"></span></div>
+									</div>
+									<div class="col-xs-6 text-center">
+										<div>NAMUR CITY</div>
+										<div class="huge"><span class="halftime-score"></span> ?</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 text-center">Jeudi 06 Octobre 2016 à 20:00</div>
+								</div>
+							</div>
+						</div>
+						</a>
+					</div>
+				</div>
+            </div>
+        </div>
+		<div class="row">
+			<h2>Classement</h2>
+			<div class="col-md-6 table-responsive">
+				<h3>Provinciale 4B</h3>
+				<table id="classement" class="table table-condensed table-striped table-hover">
+					<tbody><tr><td colspan="3" height="8"></td></tr><tr><th class="klassement" colspan="3" align="left">4ième Provinciale B</th></tr><tr><td class="klassement" height="10" width="20" align="right">1&nbsp;</td><td class="klassement" height="10" width="150">BATY HAVELANGE</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">24-5</td><th class="klassement" height="10" width="25" align="right">6</th></tr><tr><td class="klassement" height="10" width="20" align="right">2&nbsp;</td><td class="klassement" height="10" width="150">VEZIN UNITED</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="60" align="right">25-9</td><th class="klassement" height="10" width="25" align="right">5</th></tr><tr><td class="klassement" height="10" width="20" align="right">3&nbsp;</td><td class="klassement" height="10" width="150">BORUS LOYERS D</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="60" align="right">19-8</td><th class="klassement" height="10" width="25" align="right">5</th></tr><tr><td class="klassement" height="10" width="20" align="right">4&nbsp;</td><td class="klassement" height="10" width="150">CANARI ANDENNE</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">17-15</td><th class="klassement" height="10" width="25" align="right">4</th></tr><tr><td class="klassement" height="10" width="20" align="right">5&nbsp;</td><td class="klassement" height="10" width="150">OLYMPIC JAMBES</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">13-16</td><th class="klassement" height="10" width="25" align="right">4</th></tr><tr><td class="klassement" height="10" width="20" align="right">6&nbsp;</td><td class="klassement" height="10" width="150">MF EVELETTE</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="60" align="right">10-7</td><th class="klassement" height="10" width="25" align="right">3</th></tr><tr><td class="klassement" height="10" width="20" align="right">7&nbsp;</td><td class="klassement" height="10" width="150">MFCC NAMUR</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="60" align="right">13-17</td><th class="klassement" height="10" width="25" align="right">3</th></tr><tr><td class="klassement" height="10" width="20" align="right">8&nbsp;</td><td class="klassement" height="10" width="150">RD NAMUR 14 B</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">10-7</td><th class="klassement" height="10" width="25" align="right">2</th></tr><tr><td class="klassement" height="10" width="20" align="right">9&nbsp;</td><td class="klassement" height="10" width="150">NAMUR PIRATES</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">8-8</td><th class="klassement" height="10" width="25" align="right">2</th></tr><tr><td class="klassement" height="10" width="20" align="right">10&nbsp;</td><td class="klassement" height="10" width="150">MFC CINEY D</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">13-10</td><th class="klassement" height="10" width="25" align="right">2</th></tr><tr><td class="klassement" height="10" width="20" align="right">11&nbsp;</td><td class="klassement" height="10" width="150">NAMUR CITY</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">1</td><td class="klassement" height="10" width="25" align="right">2</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">13-22</td><th class="klassement" height="10" width="25" align="right">2</th></tr><tr><td class="klassement" height="10" width="20" align="right">12&nbsp;</td><td class="klassement" height="10" width="150">MF HANRET</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="25" align="right">3</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">12-24</td><th class="klassement" height="10" width="25" align="right">0</th></tr><tr><td class="klassement" height="10" width="20" align="right">13&nbsp;</td><td class="klassement" height="10" width="150">AMIC. DINANT B</td><td class="klassement" height="10" width="25" align="right">4</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="25" align="right">4</td><td class="klassement" height="10" width="25" align="right">0</td><td class="klassement" height="10" width="60" align="right">11-32</td><th class="klassement" height="10" width="25" align="right">0</th></tr></tbody>
+				</table>
+			</div>
+
+			<div class="col-md-6" id="table-goals">
+				<h3>Buteurs</h3>
+				<table class="table table-condensed table-striped table-hover">
+					<tr>
+						<th>Joueur</th>
+						<th><span class="badge clickable" ng-click="sortType = 'matches'; sortReverse = !sortReverse">Matchs joués <span ng-show="sortType == 'matches' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'matches' && sortReverse" class="fa fa-caret-up"></span></th>
+						<th><span class="badge clickable" ng-click="sortType = 'goals'; sortReverse = !sortReverse">Buts <span ng-show="sortType == 'goals' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'goals' && sortReverse" class="fa fa-caret-up"></span></th>
+						<th><span class="badge clickable" ng-click="sortType = 'ratio'; sortReverse = !sortReverse">Ratio <span ng-show="sortType == 'ratio' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'ratio' && sortReverse" class="fa fa-caret-up"></span></th>
+					</tr>
+					<tr ng-cloak ng-repeat="player in players | orderBy:[sortType, 'ratio', 'matches', '-name']:sortReverse">
+						<td>{{ player.name }}</td>
+						<td>{{ player.matches }}</td>
+						<td>{{ player.goals }}</td>
+						<td>{{ player.ratio | number: 2 }}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<h2>Résultats</h2>
+			<div class="row text-center">
+				<div class="col-lg-12">
+					<div class="panel-score panel-red" data-html="true" data-toggle="tooltip" data-placement="bottom" rel="tooltip" title="<ul class='fa-ul text-left'><li><i class='fa-li fa fa-futbol-o'></i>1 - Victor</li><li><i class='fa-li fa fa-futbol-o'></i>1 - Sylvain</li></ul>">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">2</div>
+							<div class="row row-no-padding">5</div>
+						</div>
+					</div>
+					<div class="panel-score panel-green" data-html="true" data-toggle="tooltip" data-placement="bottom" rel="tooltip" title="<ul class='fa-ul text-left'><li><i class='fa-li fa fa-futbol-o'></i>5 - Valentin</li><li><i class='fa-li fa fa-futbol-o'></i>1 - Victor</li><li><i class='fa-li fa fa-futbol-o'></i>1 - Gauthier</li><li><i class='fa-li fa fa-futbol-o'></i>1 - Pierre</li><li><i class='fa-li fa fa-futbol-o'></i>1 - PF</li></ul>">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">9</div>
+							<div class="row row-no-padding">3</div>
+						</div>
+					</div>
+					<div class="panel-score panel-red" data-html="true" data-toggle="tooltip" data-placement="bottom" rel="tooltip" title="<ul class='fa-ul text-left'><li><i class='fa-li fa fa-futbol-o'></i>1 - PF</li><li><i class='fa-li fa fa-futbol-o'></i>1 - Valentin</li></ul>">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">2</div>
+							<div class="row row-no-padding">14</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+					<div class="panel-score panel-grey">
+						<div class="panel-heading text-center">
+							<div class="row row-no-padding">?</div>
+							<div class="row row-no-padding">?</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="matches-responsive" class="col-md-12 table-responsive">
+				<table id="matches" class="table table-condensed table-striped table-hover">
+					<tr class="danger"><td class="wedstr">42011&nbsp;&nbsp;</td><td class="wedstr">LU&nbsp;</td><td class="wedstr">29-08-16 &nbsp;</td><td class="wedstr">2000&nbsp;&nbsp;</td><td class="wedstr">ANDE&nbsp;&nbsp;</td><td class="wedstr">NAMUR CITY</td><td class="wedstr">MF EVELETTE&nbsp;&nbsp;</td><td class="wedstr">2&nbsp;-&nbsp;5</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">MASAROTTI</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42013&nbsp;&nbsp;</td><td class="wedstr">MA&nbsp;</td><td class="wedstr">30-08-16 &nbsp;</td><td class="wedstr">2210&nbsp;&nbsp;</td><td class="wedstr">TEMP&nbsp;&nbsp;</td><td class="wedstr">RD NAMUR 14 B</td><td class="wedstr">BORUS LOYERS D&nbsp;&nbsp;</td><td class="wedstr">0&nbsp;-&nbsp;5</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">ORLANS</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42014&nbsp;&nbsp;</td><td class="wedstr">ME&nbsp;</td><td class="wedstr">31-08-16 &nbsp;</td><td class="wedstr">2030&nbsp;&nbsp;</td><td class="wedstr">SEIL&nbsp;&nbsp;</td><td class="wedstr">CANARI ANDENNE</td><td class="wedstr">BATY HAVELANGE&nbsp;&nbsp;</td><td class="wedstr">3&nbsp;-&nbsp;9</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">MARCHAL</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42022&nbsp;&nbsp;</td><td class="wedstr">JE&nbsp;</td><td class="wedstr">08-09-16 &nbsp;</td><td class="wedstr">2000&nbsp;&nbsp;</td><td class="wedstr">HAVE&nbsp;&nbsp;</td><td class="wedstr">MFC CINEY D</td><td class="wedstr">NAMUR PIRATES&nbsp;&nbsp;</td><td class="wedstr">5&nbsp;-&nbsp;0 FF</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr"></td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42024&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">09-09-16 &nbsp;</td><td class="wedstr">2000&nbsp;&nbsp;</td><td class="wedstr">HAVE&nbsp;&nbsp;</td><td class="wedstr">BATY HAVELANGE</td><td class="wedstr">MF HANRET &nbsp;&nbsp;</td><td class="wedstr">10&nbsp;-&nbsp;4</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">KIESECOMS</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42023&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">09-09-16 &nbsp;</td><td class="wedstr">2030&nbsp;&nbsp;</td><td class="wedstr">DINA&nbsp;&nbsp;</td><td class="wedstr">AMIC. DINANT B</td><td class="wedstr">OLYMPIC JAMBES&nbsp;&nbsp;</td><td class="wedstr">2&nbsp;-&nbsp;6</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">KLEMCZAK</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42025&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">09-09-16 &nbsp;</td><td class="wedstr">2130&nbsp;&nbsp;</td><td class="wedstr">SEIL&nbsp;&nbsp;</td><td class="wedstr">VEZIN UNITED</td><td class="wedstr">MFCC NAMUR&nbsp;&nbsp;</td><td class="wedstr">4&nbsp;-&nbsp;4</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">SPRIMONT</td><td class="wedstr"> </td></tr>
+					<tr class="success"><td class="wedstr">42031&nbsp;&nbsp;</td><td class="wedstr">LU&nbsp;</td><td class="wedstr">12-09-16 &nbsp;</td><td class="wedstr">2000&nbsp;&nbsp;</td><td class="wedstr">ANDE&nbsp;&nbsp;</td><td class="wedstr">NAMUR CITY</td><td class="wedstr">AMIC. DINANT B&nbsp;&nbsp;</td><td class="wedstr">9&nbsp;-&nbsp;3</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">HOUBION</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42034&nbsp;&nbsp;</td><td class="wedstr">ME&nbsp;</td><td class="wedstr">14-09-16 &nbsp;</td><td class="wedstr">2030&nbsp;&nbsp;</td><td class="wedstr">SEIL&nbsp;&nbsp;</td><td class="wedstr">CANARI ANDENNE</td><td class="wedstr">MF HANRET &nbsp;&nbsp;</td><td class="wedstr">7&nbsp;-&nbsp;5</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">BARBIAU</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42036&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">16-09-16 &nbsp;</td><td class="wedstr">2200&nbsp;&nbsp;</td><td class="wedstr">ISMJ&nbsp;&nbsp;</td><td class="wedstr">OLYMPIC JAMBES</td><td class="wedstr">MFC CINEY D&nbsp;&nbsp;</td><td class="wedstr">6&nbsp;-&nbsp;5</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">BARBIAU</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42037&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">16-09-16 &nbsp;</td><td class="wedstr">2215&nbsp;&nbsp;</td><td class="wedstr">LOYE&nbsp;&nbsp;</td><td class="wedstr">BORUS LOYERS D</td><td class="wedstr">MF EVELETTE&nbsp;&nbsp;</td><td class="wedstr">5&nbsp;-&nbsp;5</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">X</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42012&nbsp;&nbsp;</td><td class="wedstr">LU&nbsp;</td><td class="wedstr">19-09-16 &nbsp;</td><td class="wedstr">2030&nbsp;&nbsp;</td><td class="wedstr">SOUV&nbsp;&nbsp;</td><td class="wedstr">NAMUR PIRATES</td><td class="wedstr">AMIC. DINANT B&nbsp;&nbsp;</td><td class="wedstr">8&nbsp;-&nbsp;3</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">BAJRAKTARI</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42015&nbsp;&nbsp;</td><td class="wedstr">ME&nbsp;</td><td class="wedstr">21-09-16 &nbsp;</td><td class="wedstr">2145&nbsp;&nbsp;</td><td class="wedstr">BOUG&nbsp;&nbsp;</td><td class="wedstr" width="140">MFCC NAMUR</td><td class="wedstr" width="140">MFC CINEY D&nbsp;&nbsp;</td><td class="wedstr">4&nbsp;-&nbsp;3</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">LORAND</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42016&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">23-09-16 &nbsp;</td><td class="wedstr">2200&nbsp;&nbsp;</td><td class="wedstr">HERO&nbsp;&nbsp;</td><td class="wedstr" width="140">MF HANRET </td><td class="wedstr" width="140">VEZIN UNITED&nbsp;&nbsp;</td><td class="wedstr">3&nbsp;-&nbsp;7</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">PAIN</td><td class="wedstr"> </td></tr>
+					<tr class="danger"><td class="wedstr">42051&nbsp;&nbsp;</td><td class="wedstr">LU&nbsp;</td><td class="wedstr">26-09-16 &nbsp;</td><td class="wedstr">2000&nbsp;&nbsp;</td><td class="wedstr">ANDE&nbsp;&nbsp;</td><td class="wedstr" width="140">NAMUR CITY</td><td class="wedstr" width="140">VEZIN UNITED&nbsp;&nbsp;</td><td class="wedstr">2&nbsp;-&nbsp;14</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">BAUDELET</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42054&nbsp;&nbsp;</td><td class="wedstr">MA&nbsp;</td><td class="wedstr">27-09-16 &nbsp;</td><td class="wedstr">2210&nbsp;&nbsp;</td><td class="wedstr">TEMP&nbsp;&nbsp;</td><td class="wedstr" width="140">RD NAMUR 14 B</td><td class="wedstr" width="140">MFC CINEY D&nbsp;&nbsp;</td><td class="wedstr">10&nbsp;-&nbsp;2</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">LUCAS</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42055&nbsp;&nbsp;</td><td class="wedstr">ME&nbsp;</td><td class="wedstr">28-09-16 &nbsp;</td><td class="wedstr">2030&nbsp;&nbsp;</td><td class="wedstr">SEIL&nbsp;&nbsp;</td><td class="wedstr" width="140">CANARI ANDENNE</td><td class="wedstr" width="140">MFCC NAMUR&nbsp;&nbsp;</td><td class="wedstr">10&nbsp;-&nbsp;5</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">KIESECOMS</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42056&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">30-09-16 &nbsp;</td><td class="wedstr">2200&nbsp;&nbsp;</td><td class="wedstr">ISMJ&nbsp;&nbsp;</td><td class="wedstr" width="140">OLYMPIC JAMBES</td><td class="wedstr" width="140">BATY HAVELANGE&nbsp;&nbsp;</td><td class="wedstr">1&nbsp;-&nbsp;9</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">BARBIAU</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42057&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">30-09-16 &nbsp;</td><td class="wedstr">2215&nbsp;&nbsp;</td><td class="wedstr">LOYE&nbsp;&nbsp;</td><td class="wedstr" width="140">BORUS LOYERS D</td><td class="wedstr" width="140">AMIC. DINANT B&nbsp;&nbsp;</td><td class="wedstr">9&nbsp;-&nbsp;3</td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr">X</td><td class="wedstr"> </td></tr>
+					<tr><td class="wedstr">42053&nbsp;&nbsp;</td><td class="wedstr">LU&nbsp;</td><td class="wedstr">03-10-16 &nbsp;</td><td class="wedstr">2030&nbsp;&nbsp;</td><td class="wedstr">SOUV&nbsp;&nbsp;</td><td class="wedstr">NAMUR PIRATES</td><td class="wedstr">MF HANRET &nbsp;&nbsp;</td><td class="wedstr">  -  </td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr"></td><td class="wedstr"></td></tr>
+					<tr><td class="wedstr">42042&nbsp;&nbsp;</td><td class="wedstr">JE&nbsp;</td><td class="wedstr">06-10-16 &nbsp;</td><td class="wedstr">2000&nbsp;&nbsp;</td><td class="wedstr">HAVE&nbsp;&nbsp;</td><td class="wedstr">MFC CINEY D</td><td class="wedstr">NAMUR CITY&nbsp;&nbsp;</td><td class="wedstr">  -  </td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr"></td><td class="wedstr"></td></tr>
+					<tr><td class="wedstr">42044&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">07-10-16 &nbsp;</td><td class="wedstr">2000&nbsp;&nbsp;</td><td class="wedstr">HAVE&nbsp;&nbsp;</td><td class="wedstr">BATY HAVELANGE</td><td class="wedstr">NAMUR PIRATES&nbsp;&nbsp;</td><td class="wedstr">  -  </td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr"></td><td class="wedstr"></td></tr>
+					<tr><td class="wedstr">42043&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">07-10-16 &nbsp;</td><td class="wedstr">2030&nbsp;&nbsp;</td><td class="wedstr">DINA&nbsp;&nbsp;</td><td class="wedstr">AMIC. DINANT B</td><td class="wedstr">RD NAMUR 14 B&nbsp;&nbsp;</td><td class="wedstr">  -  </td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr"></td><td class="wedstr"></td></tr>
+					<tr><td class="wedstr">42045&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">07-10-16 &nbsp;</td><td class="wedstr">2130&nbsp;&nbsp;</td><td class="wedstr">SEIL&nbsp;&nbsp;</td><td class="wedstr">VEZIN UNITED</td><td class="wedstr">OLYMPIC JAMBES&nbsp;&nbsp;</td><td class="wedstr">  -  </td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr"></td><td class="wedstr"></td></tr>
+					<tr><td class="wedstr">42046&nbsp;&nbsp;</td><td class="wedstr">VE&nbsp;</td><td class="wedstr">07-10-16 &nbsp;</td><td class="wedstr">2200&nbsp;&nbsp;</td><td class="wedstr">HERO&nbsp;&nbsp;</td><td class="wedstr">MF HANRET </td><td class="wedstr">MFCC NAMUR&nbsp;&nbsp;</td><td class="wedstr">  -  </td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr"></td><td class="wedstr"></td></tr>
+					<tr><td class="wedstr">50105 <span class="fa fa-trophy" data-toggle="tooltip" data-placement="right" rel="tooltip" title="Match de coupe"></span></td><td class="wedstr">LU&nbsp;</td><td class="wedstr">24-10-16 &nbsp;</td><td class="wedstr">2000&nbsp;&nbsp;</td><td class="wedstr">ANDE&nbsp;&nbsp;</td><td class="wedstr">NAMUR CITY</td><td class="wedstr">MFC VEDRIN</td><td class="wedstr">  -  </td><td class="wedstr">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="wedstr"></td><td class="wedstr"> </td></tr>
+				</table>
+			</div>
+		</div>
+        <hr />
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Dernière mise à jour : 01/10/2016 - 09:50</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).keyup(function(e) {
+			if (e.keyCode === 27) {
+				$('#matches tr').show();
+			}
+		});
+		$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip(); 
+			
+			$('#classement > tbody tr:nth-child(2), #classement > tbody tr:first-child').remove();
+			
+			$('tbody tr td').each(function() {
+				$(this).removeAttr('width');
+				if ($(this).html().startsWith('NAMUR CITY') && !$(this).parent().hasClass('success') && !$(this).parent().hasClass('danger')) {
+					$(this).parent().addClass('info');
+				}
+			});
+			
+			$('#matches td').hover(
+				function() {
+					var cell = $(this);
+					$('#matches td').each(function() {
+						if (cell.html().replace(/&nbsp;/gi,'').trim() == $(this).html().replace(/&nbsp;/gi,'').trim()) {
+							$(this).parent().addClass('warning');
+							$(this).click(function() {
+								$('#matches tr').not('.warning').hide();
+								$('<div id="cancel-view"><i class=\'fa fa-close\'></i>&nbsp;Cancel</div>').click(function() { $('#matches tr').show(); $('#cancel-view').remove(); }).insertBefore('#matches-responsive');
+							});
+						}
+					});
+				},
+				function() {
+					$('#matches tr').removeClass('warning');
+				}
+			);
+		});
+	</script>
+</body>
+
+</html>

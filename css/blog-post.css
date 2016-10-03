@@ -1,0 +1,144 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background:url('../images/bg-top.png') top center no-repeat;
+	background-size:cover;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar-brand { color:white; }
+
+.tooltip-inner > ul {
+	margin-bottom:0px;
+}
+
+.panel-score {
+	display:inline-block;
+	margin-bottom:8px;
+	cursor:help;
+}
+
+.panel-score .row:first-child {
+	padding-bottom:6px;
+}
+
+.halftime-score {
+	font-size:12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.table-nobottom {
+	margin-bottom: 0px;
+}
+
+.huge {
+    font-size: 40px;
+}
+
+.panel {
+	border-radius:0px;
+	border-bottom-width:6px;
+}
+
+.panel-heading {
+	border-radius:0px;
+}
+
+.panel-green {
+    border-color: #46a046;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: white;
+    background-color: #5cb85c;
+}
+
+.panel-green > .panel-heading:hover {
+    border-color: #46a046;
+    background-color: #46a046;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-red {
+    border-color: #d1332e;
+}
+
+.panel-red > .panel-heading {
+    border-color: #d9534f;
+    color: white;
+    background-color: #d9534f;
+}
+
+.panel-red > .panel-heading:hover {
+	border-color: #d1332e;
+    background-color: #d1332e;
+}
+
+.panel-red > a {
+    color: #d9534f;
+}
+
+.panel-grey {
+    border-color: #666;
+}
+
+.panel-grey > .panel-heading {
+    border-color: grey;
+    color: white;
+    background-color: grey;
+}
+
+.panel-grey > .panel-heading:hover {
+    border-color: #666;
+    background-color: #666;
+}
+
+.panel-grey > a {
+    color: grey;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: rgba(200,200,200,0.2);
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#cancel-view {
+	background:#000;
+	color:#fff;
+	position:relative;
+	top:0px;
+	right:0px;
+	display:inline-block;
+	width:50px;
+	height:50px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#cancel-view i {
+	font-size:24px;
+}
