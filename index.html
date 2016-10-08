@@ -392,7 +392,9 @@
 							$(this).parent().addClass('warning');
 							$(this).click(function() {
 								$('#matches tr').not('.warning').hide();
-								$('<div id="cancel-view"><i class=\'fa fa-close\'></i>&nbsp;Cancel</div>').click(function() { $('#matches tr').show(); $('#cancel-view').remove(); }).insertBefore('#matches-responsive');
+								if (!$('#cancel-view').length) {
+									$('<div id="cancel-view"><span class="pull-left">Vue <strong>'+ $(this).html().replace(/&nbsp;/gi,'').trim() +'</strong></span><i class=\'fa fa-angle-double-down\'></i>&nbsp; Retour à la vue globale &nbsp;<i class=\'fa fa-angle-double-down\'></i></div>').click(function() { $('#matches tr').show(); $('#cancel-view').remove(); }).insertBefore('#matches-responsive');
+								}
 							});
 						}
 					});

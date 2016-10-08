@@ -127,18 +127,11 @@ footer {
 }
 
 #cancel-view {
-	background:#000;
-	color:#fff;
-	position:relative;
-	top:0px;
-	right:0px;
+	background:rgb(255, 171, 97);
+	color:black;
 	display:inline-block;
-	width:50px;
-	height:50px;
+	width:100%;
 	text-align:center;
-	vertical-align:middle;
-}
-
-#cancel-view i {
-	font-size:24px;
+	cursor:pointer;
+	padding:6px;
 }
