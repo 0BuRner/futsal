@@ -57,5 +57,5 @@ def update_data(file_path, soup_data):
     file_handle.write(str(soup))
     file_handle.close()
 
-update_data('c:\Users\BuRner\Documents\Projects\Futsal\index.html', get_data())
+update_data('index.html', get_data())
 print 'DONE'
