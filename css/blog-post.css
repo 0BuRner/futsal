@@ -135,3 +135,15 @@ footer {
 	cursor:pointer;
 	padding:6px;
 }
+
+@media (max-width:480px) {
+	#matches tr td:nth-child(1), td:nth-child(5), td:nth-child(10)  {
+		display:none;
+	}
+}
+
+@media (max-width:768px) {
+	#matches tr td:nth-child(10)  {
+		display:none;
+	}
+}
