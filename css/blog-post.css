@@ -135,8 +135,12 @@ footer {
 	padding:6px;
 }
 
+#matches tr td:nth-child(9), #matches tr td:nth-child(11) {
+	display:none;
+}
+
 @media (max-width:480px) {
-	#matches tr td:nth-child(1), td:nth-child(5), td:nth-child(10)  {
+	#matches tr td:nth-child(1), #matches tr td:nth-child(5), #matches tr td:nth-child(10)  {
 		display:none;
 	}
 }
