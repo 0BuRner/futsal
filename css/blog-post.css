@@ -7,6 +7,11 @@ footer {
     margin: 50px 0;
 }
 
+h2 {
+	padding:8px;
+	background-color:rgba(255,255,255,0.3);
+}
+
 .navbar-brand { color:white; }
 
 .tooltip-inner > ul {
